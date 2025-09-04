@@ -145,7 +145,9 @@ ret
 
 
 ## Result :
- 
+ The execution ALP on fundamental arithmetic and logical operations is successfully completed
+
+
 
 
 
