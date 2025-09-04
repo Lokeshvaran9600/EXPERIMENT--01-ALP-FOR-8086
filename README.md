@@ -1,7 +1,7 @@
 ## EXPERIMENT 01 - ALP for fundamental arithmetic and logical operations using 8086
-### Name : PREM KUMAR G
-### Roll no : 212223230158
-### Date of experiment : 21/8/2025
+### Name : LOKESHVARAN S
+### Roll no : 21222323040105
+### Date of experiment : 4/9/2025
 
 ## Aim: To Write and execute ALP for fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
@@ -135,7 +135,7 @@ ret
 ```
 
 ## Output  
-![alt text](<Screenshot 2025-08-21 091701.png>)
+<img width="1920" height="1080" alt="Screenshot 2025-08-21 091701" src="https://github.com/user-attachments/assets/953bf12f-740d-4163-b7f3-90a2e55d83c1" />
 
 ## Result :
  
