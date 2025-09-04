@@ -1,9 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :Irfan khan .N
+Name :LOKESHVARAN S
 
-Roll no : 212224230097
+Roll no : 212223040105
 
-Date of experiment : 21.08.2025
+Date of experiment : 04.09.2025
 
 
 
