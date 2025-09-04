@@ -103,7 +103,7 @@ RET
 ret
 ```
 ## Output  
-![alt text](<Screenshot 2025-08-21 085454.png>)
+<img width="1920" height="1080" alt="Screenshot 2025-08-21 085454" src="https://github.com/user-attachments/assets/bbfcd88a-8992-4547-9ed8-2af94c281dc6" />
 
 ## Programs for logical  operations
 ```
