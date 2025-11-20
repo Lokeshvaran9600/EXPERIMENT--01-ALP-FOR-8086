@@ -1,8 +1,10 @@
-### EXPERIMENT  01 ALP FOR 8086
+# EXPERIMENT--01-ALP-FOR-8086
+Name : LOKESHVARAN S
+Roll no : 212223040105
 
-### NAME : LOKESHVARAN S
 
-### ROLL NO : 212223040105
+
+
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
@@ -72,80 +74,188 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 
-## Programs for arithmetic  operations:
+## Programs for arithmetic  operations
+
+## Addition  of 8 bit ALP 
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+ADD AX,BX
+JNC Loop
+INC CL
+Loop:
+MOV [3005H],AX
+MOV [3007H],CL
+HLT 
+```
+
+
+## Output  
+ ![ADD](https://github.com/user-attachments/assets/04543ec2-2407-4aeb-bc6b-65d6685e1b50)
+
+## Subtraction   of 8 bit numbers  ALP 
+ ```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+SUB AX,BX
+JNC Loop
+INC CL  
+NOT AX
+INC AX
+Loop:
+MOV [3005H],AX
+MOV [3007H],CL
+HLT 
+```
+## Output
+![SUB](https://github.com/user-attachments/assets/b3198914-c807-4421-853a-86816d8ab712)
+
+## Multiplication alp 
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+MUL BX
+MOV [3005H],AX
+MOV [3007H],DX
+HLT
+
+```
+ ## Output  
+![MUL](https://github.com/user-attachments/assets/0604f061-abdc-4725-8bb2-1e52ec6e10b9)
+
+
+## Division alp 
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+DIV BX
+MOV [3005H],AX
+MOV [3007H],DX
+HLT
+
+```
+## Output  
+![DIV](https://github.com/user-attachments/assets/92317a9c-cce6-4cdc-bf18-12932a308f98)
+
+
+## Program for logical operations
+
+
+## AND
+
+## PROGRAM
+```
+ MOV AX,[3001H]
+ MOV BX,[3003H]
+ AND AX,BX
+ MOV [3005H],AX
+ HLT
 
 
 ```
-org 100h         
 
-mov AX,1234H    
-mov BX,5678H    
 
-add AX,BX      
-mov [2000H],AX  
+## OUTPUT
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/731c13a9-ac5f-46e5-8b3a-e13ce795df21" />
 
-mov AX,1234H    
-sub AX,BX       
-mov [2002H],AX  
+## OR
 
-mov AX,1234H     
-mov CX,2525H     
-mul CX          
-mov [2004H],AX  
 
-mov AX,0F325H   
-mov CL,05H       
-div CL           
-mov [2006H],AX  
+## PROGRAM
+```
+ MOV AX,[3001H]
+ MOV BX,[3003H]
+ OR AX,BX
+ MOV [3005H],AX
+ HLT
+```
+## OUTPUT
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/4fef3bd8-3572-4506-be55-8ffc26729f4b" />
 
-RET              
+## NOR
+
+## PROGRAM
+```
+
+ MOV AX,[3001H]
+ MOV BX,[3003H]
+ OR AX,BX  
+ NOT AX
+ MOV [3005H],AX
+ HLT
 
 ```
 
-## Output :
+## OUTPUT
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/7142cf67-6fd0-452e-b14a-87633c4d8053" />
+## NOT
 
-<img width="1918" height="1137" alt="image" src="https://github.com/user-attachments/assets/f1e65bdd-f6f1-41c3-96f3-742f34a787e0" />
 
-
-
-## Programs for logical  operations:
+## PROGRAM
 
 ```
-org 100h        
-mov AX,1234H     
-mov BX,5678H   
-and AX,BX        
-mov [2000H],AX   
-
-mov AX,1234H     
-or AX,BX         
-mov [2002H],AX   
-
-mov AX,1234H     
-xor AX,BX        
-mov [2004H],AX   
-
-mov AX,1234H     
-not AX           
-mov [2006H],AX   
-
-RET
-         
+MOV AX,[3001H]
+NOT AX
+MOV [3003H],AX
+HLT
 ```
-## Output :
 
-<img width="1918" height="1137" alt="image" src="https://github.com/user-attachments/assets/3ae5c865-ca87-4b2c-b2f0-add6c1ee0a53" />
+## OUTPUT
 
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/fb9e4566-0944-484a-8157-a8e2ea0ea4cc" />
+
+## XOR
+
+
+## PROGRAM
+```
+MOV AX,[3001H]
+ MOV BX,[3003H]
+ XOR AX,BX
+ MOV [3005H],AX
+ HLT
+
+```
+## OUTPUT
+
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/b4ff01a9-d8df-4828-8b7c-868f0ca1e8c3" />
+
+## XNOR
+
+## PROGRAM
+```
+ MOV AX,[3001H]
+ MOV BX,[3003H]
+ XOR AX,BX
+ NOT AX
+ MOV [3005H],AX
+ HLT
+```
+## OUTPUT
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/bfc3c979-cfb7-4b50-aaae-7559d69ccae8" />
+
+## NAND
+
+## PROGRAM
+```
+ MOV AX,[3001H]
+ MOV BX,[3003H]
+ AND AX,BX
+NOT AX
+ MOV [3005H],AX
+ HLT
+```
+## OUTPUT
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/54752a8c-7694-4eb6-99a0-2a37250b3878" />
 
 ## Result :
-
-Thus, to Write and execute ALP for fundamental arithmetic and logical operations using 8086 is executed successfully.
-
-
  
 
-
-
+Thus the given arithmetic and logical operations have been successfully executed.
 
 
 
